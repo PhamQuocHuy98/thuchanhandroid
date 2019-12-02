@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="clear_shortcut"> Clear Short Cut</string>
+    <string name="clear_label">Clear Label</string>
+    <string name="setting_shortcut"> Setting Short Cut</string>
+    <string name="setting_label">Setting Label</string>
+    <string name="exit_shortcut"> Exit Short Cut</string>
+    <string name="exit_label">Exit Label</string>
+
+    <string-array name="color_name_array">
+        <item name="red">Red</item>
+        <item name="orange">Orange</item>
+        <item name="Yellow">Yellow</item>
+        <item name="Green">Green</item>
+        <item name="Blue">Blue</item>
+        <item name="Indogo">Indio</item>
+        <item name="Violet">Violet</item>
+    </string-array>
+    <string name="forecolor">Forecolor</string>
+    <string name="backcolor">Backcolor</string>
+    <string name="FontSize">Font Size</string>
+    <string-array name="color_array">
+        <item>#FF0000</item>
+        <item>#FFA500</item>
+        <item>#FFFF00</item>
+        <item>#FF00FF00</item>
+        <item>#FF0000FF</item>
+        <item>#FF4B0082</item>
+        <item>#FFEE82EE</item>
+    </string-array>
+    <string-array name="size_array">
+        <item>30</item>
+        <item>45</item>
+        <item>50</item>
+        <item>65</item>
+        <item>70</item>
+    </string-array>
 </resources>
