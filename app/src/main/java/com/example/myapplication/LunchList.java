@@ -36,7 +36,6 @@ public class LunchList extends TabActivity {
 
     private Restaurant restaurant = new Restaurant();
     private List<Restaurant> listResaurant =new ArrayList<>();
-  //  private RestaurantAdapter adapter=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +70,7 @@ public class LunchList extends TabActivity {
         getTabHost().addTab(spec);
         getTabHost().setCurrentTab(0);
 
-
+       
 
 
     }
@@ -122,12 +121,7 @@ public class LunchList extends TabActivity {
             getTabHost().setCurrentTab(1);
         }
     };
-    void updateListView(){
-        ListView list = findViewById(R.id.restaurants);
-      //  adapter = new RestaurantAdapter();
-        //adapter = new ArrayAdapter<Restaurant>(this,android.R.layout.simple_list_item_1,listResaurant);
-       // list.setAdapter(adapter);
-    }
+
     private View.OnClickListener onSave = new View.OnClickListener() {
 
         public void onClick(View v) {
@@ -151,12 +145,11 @@ public class LunchList extends TabActivity {
 
             }
 
-           // Toast.makeText(v.getContext(),String.valueOf( listResaurant.size()), Toast.LENGTH_LONG).show();
             listResaurant.add(restaurant);
             helper.insert(restaurant.getName(),restaurant.getAddress(),restaurant.getType());
 
             curRestaurant.requery();
-            updateListView();
+
         }
     };
    /* class RestaurantAdapter extends ArrayAdapter<Restaurant>{
